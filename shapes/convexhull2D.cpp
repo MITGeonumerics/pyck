@@ -46,7 +46,7 @@ bool ConvexHull2D::IsInside(double *pt)
     j=i;
   }
 
-  if(fabs(TriSum - convexArea) > convexArea*1e-15) isInside = false;
+  if(fabs(TriSum - convexArea) > convexArea*1e-10) isInside = false;
 
   return isInside;
 }
